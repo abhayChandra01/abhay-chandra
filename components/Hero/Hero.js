@@ -6,11 +6,16 @@ import Transitions from '../Transitions/Transitions';
 export default function Hero() {
 
     return (
-        
+
         <Transitions>
             <div className='justify-center px-[6vw] pb-20 min-h-screen xs:flex-wrap md:flex'
             >
-                <div className='bg-[#251170] w-full md:min-h-[55rem] min-h-[30rem] flex justify-center items-center'>
+
+                <motion.div
+                    initial={{ y: -250 }}
+                    animate={{ y: -10 }}
+                    transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+                    className='bg-[#251170] w-full md:min-h-[55rem] min-h-[30rem] flex justify-center items-center'>
                     <div className='flex flex-col'>
                         <div className='flex items-center float-left'>
                             <hr className="h-[5px] bg-[#eb83f8] border-0 w-[6vw] mx-2" />
@@ -42,13 +47,18 @@ export default function Hero() {
                         <button className='bg-black border-double border-white border-2 mt-8 p-2 rounded-tr-lg rounded-bl-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300  md:w-[17vw] w-[35vw] h-12 text-[#e8e8e8] hover:text-[#251170] font-sans font-light text-xl'>
                             R E S U M E
                         </button>
+
                     </div>
-                </div>
-                <div className='bg-[#e8e8e8] w-full min-h-[50rem] flex justify-center items-center'>
+                </motion.div>
+                <motion.div 
+                initial={{ x: 250 }}
+                animate={{ x: 10 }}
+                transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+                className='bg-[#e8e8e8] w-full min-h-[50rem] flex justify-center items-center'>
                     HELLO
-                </div>
+                </motion.div>
             </div>
-        {/* </motion.div> */}
+            {/* </motion.div> */}
         </Transitions>
     )
 }

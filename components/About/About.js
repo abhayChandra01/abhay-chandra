@@ -13,6 +13,7 @@ export default function About() {
 
     return (
         <motion.div
+        
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -20,7 +21,11 @@ export default function About() {
         >
 
             <div className='justify-center min-h-screen xs:flex-wrap md:flex'>
-                <div className='bg-black w-full sm:min-h-[70rem] md:min-h-[55rem] min-h-[45rem] px-[8px] py-10 flex flex-col justify-center items-center'>
+                <motion.div 
+                initial={{ y: -250 }}
+                animate={{ y: -10 }}
+                transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+                className='bg-black w-full sm:min-h-[70rem] md:min-h-[55rem] min-h-[45rem] px-[8px] py-10 flex flex-col justify-center items-center'>
                     <div className='flex flex-col'>
                         <div className='flex items-center '>
                             <hr className="h-[5px] bg-[#eb83f8] border-0 w-1/4 mx-2" />
@@ -58,7 +63,7 @@ export default function About() {
                     <div className='flex items-center justify-start w-11/12 md:w-3/4 mt-4 ml-4'>
                         <SocialSection />
                     </div>
-                </div>
+                </motion.div>
                 <div className='bg-[#251170] w-full min-h-[40rem] md:min-h-[50rem] flex flex-col justify-center items-center'>
                     <div className='flex flex-col w-5/6'>
                         <div className='flex items-center '>

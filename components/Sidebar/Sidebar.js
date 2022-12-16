@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import About from "../About/About";
 import Hero from "../Hero/Hero";
 import SocialSection from "../SocialSection/SocialSection";
+import Work from "../Work/Work";
 
 const Sidebar = (props) => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -78,6 +79,11 @@ const Sidebar = (props) => {
                 <motion.button
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 1.2 }}
+                    onClick={() => {
+                        setShowSidebar(!showSidebar)
+                        props.newPage(<Work />)
+                    }}
+                
                 >
                     <h3 className="text-3xl tracking-widest font-light font-sans text-white">
                         WORK
@@ -93,7 +99,7 @@ const Sidebar = (props) => {
                 </motion.button>
 
                 <div>
-                    <SocialSection />
+                    <SocialSection />   
                 </div>
 
             </div>
