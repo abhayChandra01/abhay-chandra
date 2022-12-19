@@ -15,7 +15,7 @@ export default function Hero() {
                     initial={{ y: -250 }}
                     animate={{ y: -10 }}
                     transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
-                    className='bg-[#251170] w-full md:min-h-[55rem] min-h-[30rem] flex justify-center items-center'>
+                    className='bg-[#251170] w-full md:min-h-[80%] min-h-[30rem] flex justify-center items-center'>
                     <div className='flex flex-col'>
                         <div className='flex items-center float-left'>
                             <hr className="h-[5px] bg-[#eb83f8] border-0 w-[6vw] mx-2" />
@@ -54,7 +54,7 @@ export default function Hero() {
                 initial={{ x: 250 }}
                 animate={{ x: 10 }}
                 transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
-                className='bg-[#e8e8e8] w-full min-h-[50rem] flex justify-center items-center'>
+                className='bg-[#e8e8e8] w-full md:min-h-[80%] min-h-[30rem] flex justify-center items-center'>
                     HELLO
                 </motion.div>
             </div>

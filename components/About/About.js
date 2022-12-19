@@ -25,7 +25,7 @@ export default function About() {
                 initial={{ y: -250 }}
                 animate={{ y: -10 }}
                 transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
-                className='bg-black w-full sm:min-h-[70rem] md:min-h-[55rem] min-h-[45rem] px-[8px] py-10 flex flex-col justify-center items-center'>
+                className='bg-black w-full sm:min-h-[70rem] md:min-h-[100%] min-h-[45rem] px-[8px] py-10 flex flex-col justify-center items-center'>
                     <div className='flex flex-col'>
                         <div className='flex items-center '>
                             <hr className="h-[5px] bg-[#eb83f8] border-0 w-1/4 mx-2" />
@@ -64,7 +64,7 @@ export default function About() {
                         <SocialSection />
                     </div>
                 </motion.div>
-                <div className='bg-[#251170] w-full min-h-[40rem] md:min-h-[50rem] flex flex-col justify-center items-center'>
+                <div className='bg-[#251170] w-full min-h-[40rem] md:min-h-[100%] flex flex-col justify-center items-center'>
                     <div className='flex flex-col w-5/6'>
                         <div className='flex items-center '>
                             <hr className="h-[5px] bg-[#eb83f8] border-0 w-1/4 mx-2" />
