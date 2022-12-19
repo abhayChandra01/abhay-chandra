@@ -25,7 +25,7 @@ export default function Hero() {
                             </h1>
                         </div>
 
-                        <h1 className='md:text-[4vw] text-[8vw] text-center font-extrabold text-[#e8e8e8] font-sans'>
+                        <h1 className='md:text-[4vw] text-[8vw] text-center font-extrabold text-[#e8e8e8] font-sans uppercase'>
                             Abhay Chandra
                         </h1>
                         <h1 className='md:text-[2vw] text-[6vw] text-left text-[#e8e8e8] font-sans'>

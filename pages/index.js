@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar/Navbar"
 import Hero from "../components/Hero/Hero"
 import { useState } from "react"
+import Head from "next/head"
 
-// https://preview.themeforest.net/item/retro-one-page-resumeportfolio-template/full_screen_preview/26328816?_ga=2.55382059.1854934634.1671097018-24309560.1666957149
 
 export default function Home() {
 
@@ -10,13 +10,16 @@ export default function Home() {
 
   const newPage = (val) => {
     setView(val)
-    console.log(val);
+    // console.log(val);
   }
 
   return (
     <div
       className=" bg-black w-screen h-auto"
     >
+      <Head>
+      <link rel="logo" href="../public/favicon.ico" />
+    </Head>
       <Navbar newPage={newPage} />
       {view}
 

@@ -11,9 +11,68 @@ import SocialSection from '../SocialSection/SocialSection';
 
 export default function About() {
 
+    const skills = [
+        {
+            "name": "Next.js",
+            "level": "Intermediate",
+            "icon": <TbBrandNextjs color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "React.js",
+            "level": "Advanced",
+            "icon": <FaReact color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "Redux.js Toolkit",
+            "level": "Intermediate",
+            "icon": <SiRedux color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "Node.js",
+            "level": "Intermediate",
+            "icon": <FaNodeJs color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "JavaScript",
+            "level": "Advanced",
+            "icon": <DiJavascript1 color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "HTML/CSS",
+            "level": "Advanced",
+            "icon": <TiHtml5 color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "C",
+            "level": "Intermediate",
+            "icon": <AiFillCodeSandboxCircle color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "C++",
+            "level": "Intermediate",
+            "icon": <AiFillCodeSandboxCircle color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "MongoDB",
+            "level": "Intermediate",
+            "icon": <DiMongodb color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "MySQL",
+            "level": "Beginner",
+            "icon": <SiMysql color='white' size={35} className='mr-4' />
+        },
+        {
+            "name": "FireBase",
+            "level": "Beginner",
+            "icon": <SiFirebase color='white' size={35} className='mr-4' />
+        },
+
+    ]
+
     return (
         <motion.div
-        
+
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -21,11 +80,11 @@ export default function About() {
         >
 
             <div className='justify-center min-h-screen xs:flex-wrap md:flex'>
-                <motion.div 
-                initial={{ y: -250 }}
-                animate={{ y: -10 }}
-                transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
-                className='bg-black w-full sm:min-h-[70rem] md:min-h-[100%] min-h-[45rem] px-[8px] py-10 flex flex-col justify-center items-center'>
+                <motion.div
+                    initial={{ y: -250 }}
+                    animate={{ y: -10 }}
+                    transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+                    className='bg-black w-full sm:min-h-[70rem] md:min-h-[100%] min-h-[45rem] px-[8px] py-10 flex flex-col justify-center items-center'>
                     <div className='flex flex-col'>
                         <div className='flex items-center '>
                             <hr className="h-[5px] bg-[#eb83f8] border-0 w-1/4 mx-2" />
@@ -61,7 +120,7 @@ export default function About() {
                     </div>
 
                     <div className='flex items-center justify-start w-11/12 md:w-3/4 mt-4 ml-4'>
-                        <SocialSection />
+                        <SocialSection size={25} />
                     </div>
                 </motion.div>
                 <div className='bg-[#251170] w-full min-h-[40rem] md:min-h-[100%] flex flex-col justify-center items-center'>
@@ -74,94 +133,19 @@ export default function About() {
                             </h1>
                         </div>
                         <div className='flex items-start flex-col space-y-2 '>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center flex items-center text-[#e8e8e8] font-sans'>
-                                <TbBrandNextjs color='white' size={35} className='mr-4' />Next.js
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Intermediate
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <FaReact color='white' size={35} className='mr-4' />React.js
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Advanced
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <SiRedux color='white' size={35} className='mr-4' /> Redux.js Toolkit
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Intermediate
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <FaNodeJs color='white' size={35} className='mr-4' /> Node.js
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Intermediate
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <DiJavascript1 color='white' size={35} className='mr-4' /> JavaScript
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Advanced
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <TiHtml5 color='white' size={35} className='mr-4' /> HTML/CSS
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Advanced
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <AiFillCodeSandboxCircle color='white' size={35} className='mr-4' />C
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Intermediate
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <AiFillCodeSandboxCircle color='white' size={35} className='mr-4' />C++
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Intermediate
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <DiMongodb color='white' size={35} className='mr-4' />MongoDB
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Intermediate
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <SiMysql color='white' size={35} className='mr-4' /> MySQL
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Beginner
-                                </div>
-                            </h1>
-                            <h1 className='md:text-[1.5vw] text-[4vw] text-center  flex items-center text-[#e8e8e8] font-sans'>
-                                <SiFirebase color='white' size={35} className='mr-4' /> FireBase
-                                <div
-                                    className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
-                                >
-                                    Beginner
-                                </div>
-                            </h1>
+
+                            {skills.map((skill) =>
+
+                                <h1 className='md:text-[1.5vw] text-[4vw] text-center flex items-center text-[#e8e8e8] font-sans'>
+                                    {skill.icon}{skill.name}
+                                    <div
+                                        className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
+                                    >
+                                        {skill.level}
+                                    </div>
+                                </h1>
+                            )}
+
                         </div>
 
                     </div>

@@ -6,6 +6,7 @@ import About from "../About/About";
 import Hero from "../Hero/Hero";
 import SocialSection from "../SocialSection/SocialSection";
 import Work from "../Work/Work";
+import Contact from "../Contact/Contact";
 
 const Sidebar = (props) => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -22,7 +23,7 @@ const Sidebar = (props) => {
                         size={40}
                         onClick={() => setShowSidebar(!showSidebar)}
 
-                        className="flex items-center cursor-pointer fixed right-10 top-6 z-50"
+                        className="flex items-center cursor-pointer fixed right-6 top-4 z-50"
                     />
                 </button>
             ) : (
@@ -43,7 +44,7 @@ const Sidebar = (props) => {
                         color="white"
                         size={40}
                         onClick={() => setShowSidebar(!showSidebar)}
-                        className="fixed z-30 flex items-center cursor-pointer right-10 top-6"
+                        className="fixed z-30 flex items-center cursor-pointer right-6 top-4"
                     />
                 </button>
             )}
@@ -92,6 +93,10 @@ const Sidebar = (props) => {
                 <motion.button
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 1.2 }}
+                    onClick={() => {
+                        setShowSidebar(!showSidebar)
+                        props.newPage(<Contact />)
+                    }}
                 >
                     <h3 className="text-3xl tracking-widest font-light font-sans text-white">
                         CONTACT
@@ -99,7 +104,7 @@ const Sidebar = (props) => {
                 </motion.button>
 
                 <div>
-                    <SocialSection />   
+                    <SocialSection size={30}/>   
                 </div>
 
             </div>
