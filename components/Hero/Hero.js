@@ -44,7 +44,12 @@ export default function Hero() {
                                 }}
                             />
                         </h1>
-                        <button className='bg-black border-double border-white border-2 mt-8 p-2 rounded-tr-lg rounded-bl-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300  md:w-[17vw] w-[35vw] h-12 text-[#e8e8e8] hover:text-[#251170] font-sans font-light text-xl'>
+                        <button 
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href = '/files/resume.pdf';
+                          }}
+                        className='bg-black border-double border-white border-2 mt-8 p-2 rounded-tr-lg rounded-bl-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300  md:w-[17vw] w-[35vw] h-12 text-[#e8e8e8] hover:text-[#251170] font-sans font-light text-xl'>
                             R E S U M E
                         </button>
 
