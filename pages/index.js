@@ -6,7 +6,7 @@ import Head from "next/head"
 
 export default function Home() {
 
-  const [view , setView] = useState(<Hero />)
+  const [view, setView] = useState(<Hero />)
 
   const newPage = (val) => {
     setView(val)
@@ -18,8 +18,9 @@ export default function Home() {
       className=" bg-black w-screen h-auto"
     >
       <Head>
-      <link rel="logo" href="../public/favicon.ico" />
-    </Head>
+        <title>Abhay Chandra</title>
+        <link rel="logo" href="../public/favicon.ico" />
+      </Head>
       <Navbar newPage={newPage} />
       {view}
 

@@ -50,7 +50,7 @@ const Sidebar = (props) => {
             )}
 
             <div
-                className={`flex flex-col items-center justify-center top-0 space-y-24 right-0 md:w-[35vw] w-full bg-black bg-opacity-60 border-l-2 border-r-0 border-t-0 border-b-0 border-white p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
+                className={`flex flex-col items-center justify-center top-0 space-y-24 right-0 md:w-[35vw] w-full bg-black backdrop-blur-sm bg-opacity-60 border-l-2 border-r-0 border-t-0 border-b-0 border-white p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
                     }`}
             >
                 <motion.button
