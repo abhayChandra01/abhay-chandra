@@ -73,14 +73,15 @@ export default function Work() {
           transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
           className='bg-black lg:w-1/2 w-full sm:min-h-[70rem] md:min-h-[100%] min-h-[45rem] px-[8px] pt-32 flex flex-col my-auto'>
 
-          {leftWorks.map((work,index) =>
+          {leftWorks.map((work, index) =>
 
             <motion.div
+              key={index}
               initial={{ y: -250 }}
               animate={{ y: -10 }}
               transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
               className='w-full  px-[30px] flex flex-col mb-10  items-center text-white '>
-              <div key={index} className='border h-fit w-full border-white rounded-lg p-6'>
+              <div className='border h-fit w-full border-white rounded-lg p-6'>
                 <div className='w-full flex flex-wrap'>
                   <div className='w-full lg:w-1/2'>
                     <h1 className='text-2xl font-sans font-bold uppercase'>{work.title}</h1>
@@ -107,7 +108,7 @@ export default function Work() {
                   SKILLS USED
                 </h2>
                 <div className='w-full flex flex-wrap mt-4'>
-                  {work.tags.map((tag,index) =>
+                  {work.tags.map((tag, index) =>
                     <div key={index}
                       className="text-xs mt-4 inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full">
                       {tag}
@@ -130,15 +131,16 @@ export default function Work() {
           transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
           className='bg-[#251170] lg:w-1/2 w-full sm:min-h-[70rem] md:min-h-screen px-[8px] pt-[10vw] flex flex-col my-auto'>
 
-            
-          {rightWorks.map((work,index) =>
+
+          {rightWorks.map((work, index) =>
 
             <motion.div
+              key={index}
               initial={{ y: -250 }}
               animate={{ y: -10 }}
               transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
               className='w-full h-1/2 px-[30px] mb-10 flex flex-col justify-center items-center text-white '>
-              <div key={index} className='border h-fit w-full border-white rounded-lg p-6'>
+              <div className='border h-fit w-full border-white rounded-lg p-6'>
                 <div className='w-full flex flex-wrap'>
                   <div className='w-full lg:w-1/2'>
                     <h1 className='text-2xl font-sans font-bold uppercase'>{work.title}</h1>
@@ -165,7 +167,7 @@ export default function Work() {
                   SKILLS USED
                 </h2>
                 <div className='w-full flex flex-wrap mt-4'>
-                  {work.tags.map((tag,index) =>
+                  {work.tags.map((tag, index) =>
                     <div key={index}
                       className="text-xs mt-4 inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full">
                       {tag}
