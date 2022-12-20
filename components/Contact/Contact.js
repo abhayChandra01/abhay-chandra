@@ -19,7 +19,7 @@ export default function Contact() {
                     className='bg-black w-full sm:min-h-[70rem] md:min-h-[100%] min-h-[45rem] px-[8px] pt-32 flex flex-col my-auto'>
 
                         <div className='my-auto mx-auto w-3/4 flex flex-col space-y-10 items-center'>
-                            <h1 className='text-white font-bold font-sans text-center text-5xl'>Let's Connect !</h1>
+                            <h1 className='text-white font-bold font-sans text-center text-5xl'>Let&apos;s Connect !</h1>
                             <hr className="h-[5px] bg-[#eb83f8] border-0 w-[12vw] mx-auto mt-2" />
 
                             <SocialSection size={45} />

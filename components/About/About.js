@@ -134,9 +134,9 @@ export default function About() {
                         </div>
                         <div className='flex items-start flex-col space-y-2 '>
 
-                            {skills.map((skill) =>
+                            {skills.map((skill , index) =>
 
-                                <h1 className='md:text-[1.5vw] text-[4vw] text-center flex items-center text-[#e8e8e8] font-sans'>
+                                <h1 key={index} className='md:text-[1.5vw] text-[4vw] text-center flex items-center text-[#e8e8e8] font-sans'>
                                     {skill.icon}{skill.name}
                                     <div
                                         className="text-xs inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"

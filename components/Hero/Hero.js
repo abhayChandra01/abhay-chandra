@@ -21,7 +21,7 @@ export default function Hero() {
                             <hr className="h-[5px] bg-[#eb83f8] border-0 w-[6vw] mx-2" />
 
                             <h1 className='md:text-[2vw] text-[4vw] text-left  text-[#e8e8e8] font-sans'>
-                                Hello I'm
+                                Hello I&apos;m
                             </h1>
                         </div>
 
