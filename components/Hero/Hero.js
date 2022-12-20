@@ -3,6 +3,8 @@ import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import Transitions from "../Transitions/Transitions";
 
+// ABHAY CHANDRA
+
 export default function Hero() {
   return (
     <Transitions>
