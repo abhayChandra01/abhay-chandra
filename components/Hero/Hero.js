@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import Transitions from "../Transitions/Transitions";
+import Image from "next/image";
+import shape01 from "../../public/shapes/shape01.png";
 
 // ABHAY CHANDRA
 
@@ -15,6 +17,10 @@ export default function Hero() {
           transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
           className="bg-[#251170] w-full md:min-h-[80%] min-h-[30rem] flex justify-center items-center"
         >
+          <div className="absolute flex items-end animate-[bounce_3s_linear_infinite] place-content-end h-full w-full justify-end z-10">
+            <Image alt="BG-Animation" src={shape01} width={100} height={100} />
+          </div>
+
           <div className="flex flex-col">
             <div className="flex items-center float-left">
               <hr className="h-[5px] bg-[#eb83f8] border-0 w-[6vw] mx-2" />
