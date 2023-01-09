@@ -29,7 +29,7 @@ export default function Work() {
       location: "Bangalore",
       company_url: "https://www.xelpmoc.in/",
       description:
-        "Worked on an US-based industry-level project built in React.js and also used Redux.js toolkit.",
+        "Worked on an US-based industry-level project built in React.js and also used Redux.js toolkit. Also, developed features from the scratch, unit tested & delivered within the deadline.",
       tags: ["React.js", "Redux.js Toolkit", "JavaScript", "HTML/CSS"],
       duration: "< Aug 2022 - Dec 2022 >",
       id: 1,
@@ -44,7 +44,7 @@ export default function Work() {
       location: "Gwalior",
       company_url: "https://aurbitus.com/",
       description:
-        "Made a MERN Stack Project for a MLM-based client Service Point India (SPI), with an E-Commerce layout, also lead the team of 2 members & have hands on experience on React.js & Node.js.",
+        "Built a MERN Stack Project from scratch for a MLM-based client Service Point India (SPI), with an E-Commerce layout, also lead the team of 2 members & have hands on experience on React.js & Node.js.",
       tags: ["React.js", "Node.js", "MongoDB", "JavaScript", "HTML/CSS"],
       duration: "< Jan 2022 - Mar 2022 >",
       id: 2,
@@ -56,7 +56,7 @@ export default function Work() {
       location: "Gwalior",
       company_url: "https://www.numericinfosystems.com/",
       description:
-        "Made Student Marksheet Management System & Product Management System using Node.js.",
+        "Built Student Marksheet Management System & Product Management System using Node.js.",
       tags: ["Node.js", "MySQL", "JavaScript", "HTML/CSS"],
       duration: "< July 2021 - Dec 2021 >",
       id: 3,
