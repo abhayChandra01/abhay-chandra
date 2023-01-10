@@ -61,7 +61,7 @@ export default function NewWork() {
             id: 3,
         }
     ];
-    const height = windowSize.width > 767 ? 430 : windowSize.width > 638 ? 550 : 600
+    const height = windowSize.width > 767 ? 350 : windowSize.width > 638 ? 500 : 550
     const padding = 10;
     const size = 150;
 
@@ -167,7 +167,7 @@ export default function NewWork() {
                                         {work.tags.map((tag, index) => (
                                             <div
                                                 key={index}
-                                                className="text-xs mt-4 inline-flex items-center font-bold leading-sm uppercase px-6 ml-4 py-1 bg-black text-white border border-blue-200 rounded-full"
+                                                className="sm:text-xs text-[10px] px-4 py-1 mx-1 my-2 inline-flex items-center font-bold leading-sm uppercase bg-black text-white border border-blue-200 rounded-full"
                                             >
                                                 {tag}
                                             </div>
