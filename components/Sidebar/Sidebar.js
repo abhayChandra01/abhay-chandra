@@ -7,6 +7,7 @@ import Hero from "../Hero/Hero";
 import SocialSection from "../SocialSection/SocialSection";
 import Work from "../Work/Work";
 import Contact from "../Contact/Contact";
+import NewWork from "../Work/NewWork";
 
 const Sidebar = (props) => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -77,19 +78,35 @@ const Sidebar = (props) => {
                         ABOUT
                     </h3>
                 </motion.button>
-                <motion.button
+                {/* <motion.button
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 1.2 }}
                     onClick={() => {
                         setShowSidebar(!showSidebar)
                         props.newPage(<Work />)
                     }}
-                
+
+                >
+                    <h3 className="text-3xl tracking-widest font-light font-sans text-white">
+                        WORK
+                    </h3>
+                </motion.button> */}
+
+                <motion.button
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 1.2 }}
+                    onClick={() => {
+                        setShowSidebar(!showSidebar)
+                        props.newPage(<NewWork />)
+                    }}
+
                 >
                     <h3 className="text-3xl tracking-widest font-light font-sans text-white">
                         WORK
                     </h3>
                 </motion.button>
+
+
                 <motion.button
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 1.2 }}
@@ -104,7 +121,7 @@ const Sidebar = (props) => {
                 </motion.button>
 
                 <div>
-                    <SocialSection size={30}/>   
+                    <SocialSection size={30} />
                 </div>
 
             </div>
