@@ -122,7 +122,7 @@ export default function NewWork() {
                             // ${index % 2 != 0 ? 'bg-[#251170]' : ''}
                             return (
                                 <motion.div
-                                    className={`md:w-[700px]  sm:w-[450px] w-[300px] p-6  ${index % 2 != 0 ? 'bg-[#251170] text-white' : 'bg-white'} `}
+                                    className={`md:w-[700px]  sm:w-[450px] w-[300px] p-6  ${index % 2 != 0 ? 'bg-[#251170] text-white' : 'bg-white text-black'} `}
 
                                     style={{
                                         // width: 700,
