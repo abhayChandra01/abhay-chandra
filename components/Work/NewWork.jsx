@@ -81,6 +81,9 @@ export default function NewWork() {
         ["calc(0% - 0px)", "calc(100% - 40px)"]
     );
 
+    const scale = useTransform(scrollY, [0, 100], [0, 1])
+    const opacity = useTransform(scrollY, [0, 100], [0, 1])
+
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -92,6 +95,21 @@ export default function NewWork() {
                 animate={{ y: -10 }}
                 transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
                 className="justify-center min-h-screen flex items-center flex-col">
+
+                <motion.div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "50%",
+                        backgroundColor: "#fff",
+                        position: "absolute",
+                        top: 120,
+                        left: "50%",
+                        marginLeft: -20,
+                        scale: scale,
+                        opacity: opacity,
+                    }}
+                />
 
                 <motion.div
                     className="md:w-[700px] sm:w-[450px] w-[300px] mt-20 h-[500px]"
