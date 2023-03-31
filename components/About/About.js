@@ -12,11 +12,6 @@ import SocialSection from "../SocialSection/SocialSection";
 export default function About() {
   const skills = [
     {
-      name: "Next.js",
-      level: "Intermediate",
-      icon: <TbBrandNextjs color="white" size={35} className="mr-4" />,
-    },
-    {
       name: "React.js",
       level: "Advanced",
       icon: <FaReact color="white" size={35} className="mr-4" />,
@@ -25,6 +20,11 @@ export default function About() {
       name: "Redux.js Toolkit",
       level: "Intermediate",
       icon: <SiRedux color="white" size={35} className="mr-4" />,
+    },
+    {
+      name: "Next.js",
+      level: "Intermediate",
+      icon: <TbBrandNextjs color="white" size={35} className="mr-4" />,
     },
     {
       name: "Node.js",
