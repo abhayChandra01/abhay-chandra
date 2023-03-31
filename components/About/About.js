@@ -118,7 +118,7 @@ export default function About() {
                 renowned organization that values learning, growth, and innovation, 
                 so that I can expand my skillset.
                 <br />
-                Proficient in React.js , Node.js & currently exploring Next.js.
+                Proficient in React.js.
                 <br />
                 As a highly self-motivated web developer, I thrive on building 
                 web applications and continuously expanding my skills with the 
