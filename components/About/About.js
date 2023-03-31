@@ -114,9 +114,6 @@ export default function About() {
                 CBSE Board & currently, I am persuing Bachelor Of Technology
                 from ITM Gwalior in the field of Information Technology.
                 <br />
-//                 I am seeking a challenging position in a reputed organization
-//                 where I can learn new skills, expand my knowledge, and leverage
-//                 my learnings as a developer.
                 I am a passionate developer seeking a challenging position in a 
                 renowned organization that values learning, growth, and innovation, 
                 so that I can expand my skillset.
@@ -126,9 +123,6 @@ export default function About() {
                 As a highly self-motivated web developer, I thrive on building 
                 web applications and continuously expanding my skills with the 
                 latest technologies to create meaningful and innovative solutions.
-//                   I am a highly self-motivated web developer who spends most
-//                 of his time building applications, learning new things and
-//                 keeping myself up-to-date with the latest technologies.
               </h3>
             </div>
           </div>
