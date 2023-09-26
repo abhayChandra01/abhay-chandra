@@ -111,7 +111,7 @@ export default function About() {
             <div className="w-full mt-3 flex items-center justify-center">
               <h3 className="md:text-[1.2vw] text-[4vw] text-left  text-[#e8e8e8] font-sans">
                 I belong to Shahjahanpur, Uttar Pradesh. I did my schooling from
-                CBSE Board & currently, I am persuing Bachelor Of Technology
+                CBSE Board & completed my Bachelor Of Technology
                 from ITM Gwalior in the field of Information Technology.
                 <br />
                 I am a passionate developer seeking a challenging position in a 
